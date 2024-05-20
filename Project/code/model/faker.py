@@ -9,7 +9,7 @@ def generate_lawyer():
     expertise = random.choice(["Personal Injury Law", "Family Law", "Business Law", "Criminal Defense Law", "Real Estate Law", "Immigration Law", "Intellectual Property Law", "Employment Law", "Environmental Law", "Medical Malpractice Law"])
     location = fake.city_name()
     rating = round(random.uniform(3.5, 5.0), 1)
-    fees = f"{random.randint(2000, 50000)}"
+    fees = f"{random.randint(20000, 50000)}"
     return [name, expertise, location, rating, fees]
 
 def generate_dataset(num_lawyers):
